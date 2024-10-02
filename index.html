@@ -2,26 +2,85 @@
   <head>
     <title>Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            }
-          }
-        }
-      }
-    </script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+     
+    </style>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">
-      Block 1
-    </h1>
-    <h1 class="text-3xl font-bold underline text-clifford">
-      Block 2
-    </h1>
-    <button class="bg-green-500 text-white font-bold py-3 px-4 rounded-lg text-center">
-      Click Me
-    </button>
+    <div class="flex flex-row items-center justify-between">
+      <div class="flex flex-row left">
+        <a target="_blank" href="/products/codesandbox">
+          <img src="icon.jpg" style="width:48px; height:48px" alt="CodeSandbox logo" class="rounded">
+        </a>
+        <div class="ml-4 flex flex-col">
+          <a target="_blank" href="/products/codesandbox">
+            <div class="text-16 font-semibold text-dark-gray">
+              1. CodeSandbox
+            </div>
+          </a>
+          <div class="flex flex-row items-center">
+            <div class="flex flex-row items-center justify-center gap-1">
+              <div class="flex flex-row">
+                <label data-test="star-1" class="cursor-pointer styles_tinyStar__6JueJ">
+                  <input hidden="" type="radio" value="1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" data-test="star-1-filled" class="fill-light-blue pl-1 !fill-[#f5a623]">
+                    <path d="m12 0 3.709 7.514L24 8.718l-6 5.848 1.416 8.26-7.416-3.9-7.416 3.9L6 14.566 0 8.718l8.291-1.204z">
+                    </path>
+                  </svg>
+                </label>
+                <label data-test="star-2" class="cursor-pointer styles_tinyStar__6JueJ">
+                  <input hidden="" type="radio" value="2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" data-test="star-2-filled" class="fill-light-blue pl-1 !fill-[#f5a623]">
+                    <path d="m12 0 3.709 7.514L24 8.718l-6 5.848 1.416 8.26-7.416-3.9-7.416 3.9L6 14.566 0 8.718l8.291-1.204z">
+                    </path>
+                  </svg>
+                </label>
+                <label data-test="star-3" class="cursor-pointer styles_tinyStar__6JueJ">
+                  <input hidden="" type="radio" value="3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" data-test="star-3-filled" class="fill-light-blue pl-1 !fill-[#f5a623]">
+                    <path d="m12 0 3.709 7.514L24 8.718l-6 5.848 1.416 8.26-7.416-3.9-7.416 3.9L6 14.566 0 8.718l8.291-1.204z">
+                    </path>
+                  </svg>
+                </label>
+                <label data-test="star-4" class="cursor-pointer styles_tinyStar__6JueJ">
+                  <input hidden="" type="radio" value="4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" data-test="star-4-filled" class="fill-light-blue pl-1 !fill-[#f5a623]">
+                      <path d="m12 0 3.709 7.514L24 8.718l-6 5.848 1.416 8.26-7.416-3.9-7.416 3.9L6 14.566 0 8.718l8.291-1.204z">
+                      </path>
+                  </svg>
+                </label>
+                <label data-test="star-5" class="cursor-pointer styles_tinyStar__6JueJ">
+                  <input hidden="" type="radio" value="5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" data-test="star-5-not-filled" class="fill-light-blue pl-1">
+                    <path d="m12 0 3.709 7.514L24 8.718l-6 5.848 1.416 8.26-7.416-3.9-7.416 3.9L6 14.566 0 8.718l8.291-1.204z">
+                    </path>
+                  </svg>
+                </label>
+              </div>
+              <a class="text-12 font-normal text-light-gray ml-3" target="_blank" href="/products/codesandbox/reviews">
+                40 reviews
+              </a>
+            </div>
+            <a class="text-16 font-normal text-dark-gray" target="_blank" href="/products/codesandbox/alternatives">
+              <div class="text-12 font-normal text-light-gray">
+                21 alternatives
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row gap-2">
+        <button type="button" data-test="collection-product-106598-collect-icon" aria-label="Add to Collection" class="styles_reset__0clCw styles_button__BmLM4 styles_secondary__zB2Yb">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="13" fill="none">
+            <path stroke="#4B587C" stroke-linecap="round" stroke-linejoin="round" d="M9 12 5 9.5 1 12V1a.5.5 0 0 1 .5-.5h7A.5.5 0 0 1 9 1z">
+            </path>
+          </svg>
+        </button>
+        <a target="_blank" class="styles_reset__0clCw styles_button__BmLM4 styles_secondary__zB2Yb" href="/products/codesandbox">
+          Learn more
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
