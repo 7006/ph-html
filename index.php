@@ -5,6 +5,14 @@ $year = $now->format('Y');
 
 $currentProduct = 'Repl.it';
 
+$product = [
+  'productName' => 'CodeSandbox',
+  'reviewCount' => 40,
+  'alternativeCount' => 21,
+  'productDescription' => 'CodeSandbox is an online code editor and prototyping tool that makes creating and sharing web apps faster',
+  'lastReview' => 'Great updates, endless possibilities. My choice for coding small projects to share and have online for years!'
+];
+
 ?>
 <html>
   <head>
@@ -19,28 +27,28 @@ $currentProduct = 'Repl.it';
           <div class="flex flex-row gap-3">
               <div class="text-16 font-semibold text-dark-gray">
                 <a target="_blank" href="/">
-                  1. CodeSandbox
+                  1. <?php echo $product['productName']; ?>
                 </a>
               </div>
               <div class="text-12 font-normal text-light-gray">
                 <a target="_blank" href="/">
-                   40 reviews
+                   <?php echo $product['reviewCount']; ?> reviews
                 </a>
               </div>
               <div class="text-12 font-normal text-light-gray">
                 <a target="_blank" href="/">
-                  21 alternatives
+                  <?php echo $product['alternativeCount']; ?> alternatives
                 </a>
               </div>
             </div>
           <div class="flex flex-col mb-6 mt-4">
             <div class="text-16 font-normal text-dark-gray">
-              CodeSandbox is an online code editor and prototyping tool that makes creating and sharing web apps faster
+               <?php echo $product['productDescription']; ?>
             </div>
             <div class="flex flex-row gap-4 mt-4">
               <img class="rounded-full w-8 h-8" src="/img/henk.jpeg" alt="Henk">
               <div class="text-14 font-normal text-light-gray italic">
-                 Great updates, endless possibilities. My choice for coding small projects to share and have online for years!
+                  <?php echo $product['lastReview']; ?>
               </div>
             </div>
           </div>
