@@ -1,6 +1,14 @@
+<?php
+
+$now = new DateTime();
+$year = $now->format('Y');
+
+$currentProduct = 'Repl.it';
+
+?>
 <html>
   <head>
-    <title>Best Repl.it Alternatives - 2024 | Product Hunt</title>
+    <title>Best <?php echo $currentProduct; ?> Alternatives - <?php echo $year; ?></title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="ml-10 mr-10">
