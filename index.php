@@ -5,13 +5,17 @@ $year = $now->format('Y');
 
 $currentProduct = 'Repl.it';
 
-$product = [
-  'productName' => 'CodeSandbox',
-  'reviewCount' => 40,
-  'alternativeCount' => 21,
-  'productDescription' => 'CodeSandbox is an online code editor and prototyping tool that makes creating and sharing web apps faster',
-  'lastReview' => 'Great updates, endless possibilities. My choice for coding small projects to share and have online for years!'
+$products = [
+  [
+    'productName' => 'CodeSandbox',
+    'reviewCount' => 40,
+    'alternativeCount' => 21,
+    'productDescription' => 'CodeSandbox is an online code editor and prototyping tool that makes creating and sharing web apps faster',
+    'lastReview' => 'Great updates, endless possibilities. My choice for coding small projects to share and have online for years!'
+  ],
 ];
+
+
 
 ?>
 <html>
@@ -22,12 +26,13 @@ $product = [
   <body class="ml-10 mr-10">
     <ul>
       <!-- 1 -->
+      <?php foreach ($products as $index => $product) : ?>       
       <li class="flex flex-col">
         <div class="flex flex-col flex-wrap mx-11 my-5 left">
           <div class="flex flex-row gap-3">
               <div class="text-16 font-semibold text-dark-gray">
                 <a target="_blank" href="/">
-                  1. <?php echo $product['productName']; ?>
+                  <?php echo $index + 1; ?>. <?php echo $product['productName']; ?>
                 </a>
               </div>
               <div class="text-12 font-normal text-light-gray">
@@ -55,6 +60,7 @@ $product = [
           <hr>
         </div>
       </li>
+      <?php endforeach; ?>
       <!-- 2 -->
       <li class="flex flex-col">
         <div class="flex flex-col flex-wrap mx-11 my-5 left">
