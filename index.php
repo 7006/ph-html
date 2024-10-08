@@ -1,5 +1,8 @@
 <?php
 
+$dsn = getenv('PG_DSN');
+$pdo = new \PDO($dsn);
+
 $now = new DateTime();
 $year = $now->format('Y');
 
