@@ -1,6 +1,7 @@
 <?php
 
 $dsn = getenv('PG_DSN');
+
 $pdo = new PDO($dsn);
 var_dump($pdo->query('select version()')->fetchAll());
 
