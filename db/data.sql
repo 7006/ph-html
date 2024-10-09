@@ -8,8 +8,6 @@ insert into products (
   product_logo_url
 )
 values
-
-  -- line 1
   (
   'CodeSandbox',
   40,
@@ -19,8 +17,6 @@ values
   '/img/avatar/henk.jpeg',
   '/img/product-logo/codesandbox_logo.jpeg'
   ),
-  
-  -- line 2
   (
   'Replit',
   null,
@@ -30,8 +26,6 @@ values
   null,
   '/img/product-logo/replit_logo.jpg'
   ),
-  
-  -- line 3
   (
   'Codecademy',
   26,
@@ -41,19 +35,15 @@ values
   null,
   '/img/product-logo/codecademy_logo.jpeg'
   ),
-  
-  -- line 4
   (
   'vscode.dev',
   21,
   6,
-  'Now when you go to https://vscode.dev, you''ll be presented with a lightweight version of VS Code running fully in the browser. Open a folder on your local machine and start coding. No install required.',
+  'Now when you go to https://vscode.dev, youll be presented with a lightweight version of VS Code running fully in the browser. Open a folder on your local machine and start coding. No install required.',
   null,
   null,
   '/img/product-logo/vscode_dev_logo.jpeg'
   ),
-  
-  -- line 5
   (
   'adaface',
   34,
@@ -63,8 +53,6 @@ values
   null,
   '/img/product-logo/adaface_logo.jpeg'
   ),
-  
-  -- line 6
   (
   'Tuple',
   23,
@@ -74,14 +62,12 @@ values
   '/img/avatar/kristine.jpeg',
   '/img/product-logo/tuple_logo.jpeg'
   ),
-  
-    -- line 7
   (
   'CodeSandbox for iOS',
   4,
   7,
   'CodeSandbox for iOS lets you take your projects and sandboxes with you wherever you go. Using an iPhone or iPad, you can now access our new cloud development platform in the comfort of a native iOS IDE.',
-  'I''ve been on the beta for the iOS app, and excited to it launch - I initially tried using the browser version on the iPad, which worked well, but this native iOS app is a game changer, as it brings all the native touch and gestures which the browser doesn''t support. It just becomes so easy and much more comfortable to use. Now I can code without carrying the bigger laptop',
+  'I have been on the beta for the iOS app, and excited to it launch - I initially tried using the browser version on the iPad, which worked well, but this native iOS app is a game changer, as it brings all the native touch and gestures which the browser does not support. It just becomes so easy and much more comfortable to use. Now I can code without carrying the bigger laptop',
     '/img/avatar/peter.jpeg',
     '/img/product-logo/codesandbox_for_ios_logo.jpeg'
   );
